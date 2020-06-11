@@ -2,7 +2,7 @@ package io;
 
 import java.util.Scanner;
 
-public class Anagram {
+public class P03_Anagram {
 
     public static void main(String[] args) {
 

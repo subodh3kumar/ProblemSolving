@@ -8,7 +8,7 @@ package io;
 
 import java.util.Scanner;
 
-public class SeatingArrangement {
+public class P01_SeatingArrangement {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

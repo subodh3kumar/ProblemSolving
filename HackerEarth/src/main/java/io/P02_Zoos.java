@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Zoos {
+public class P02_Zoos {
 
     public static void main(String[] args) {
         String word = getInput().toLowerCase();
