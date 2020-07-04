@@ -11,6 +11,7 @@
         <module>HackerEarth</module>
         <module>HackerRank</module>
         <module>LeetCode</module>
+        <module>Misc</module>
     </modules>
     <packaging>pom</packaging>
 
