@@ -3,24 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.example</groupId>
-    <artifactId>ProblemSolving</artifactId>
+    <groupId>workshop</groupId>
+    <artifactId>JavaMagazine</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>Codility</module>
-        <module>HackerEarth</module>
-        <module>HackerRank</module>
-        <module>LeetCode</module>
-        <module>Misc</module>
-    </modules>
-    <packaging>pom</packaging>
 
     <properties>
-        <java.version>11</java.version>
-        <compiler.version>3.8.1</compiler.version>
-        <surefire.version>2.22.2</surefire.version>
-        <junit.version>5.5.2</junit.version>
+        <compiler.plugin>3.8.1</compiler.plugin>
+        <surefire.plugin>2.22.2</surefire.plugin>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>14</java.version>
+        <junit.version>5.6.2</junit.version>
         <hamcrest.version>2.2</hamcrest.version>
+        <assertj.version>3.16.1</assertj.version>
         <lombok.version>1.18.12</lombok.version>
     </properties>
 
@@ -38,6 +32,12 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
@@ -50,7 +50,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${compiler.version}</version>
+                <version>${compiler.plugin}</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -59,7 +59,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>${surefire.version}</version>
+                <version>${surefire.plugin}</version>
             </plugin>
         </plugins>
     </build>
