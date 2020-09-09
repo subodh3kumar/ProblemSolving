@@ -2,8 +2,10 @@ package workshop;
 
 public class RemoveOddIndexUnderscore {
 
+    private static final String EMPTY = "";
+
     public String removeUnderscoreFromOddIndex(String word) {
-        if (word == null || "".equals(word.trim())) {
+        if (word == null || EMPTY.equals(word.trim())) {
             throw new NullPointerException("empty string");
         }
         StringBuilder result = new StringBuilder();
