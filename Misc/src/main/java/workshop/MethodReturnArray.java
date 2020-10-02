@@ -1,6 +1,6 @@
 package workshop;
 
-public class P01_MethodReturnArray {
+public class MethodReturnArray {
 
     public static void main(String[] args) {
         int a = 1;
@@ -8,7 +8,7 @@ public class P01_MethodReturnArray {
         int c = 3;
 
         if (a + b == c) {
-            System.out.println(method()[0]);
+            System.out.println(method()[0]); //Here is the main point
         }
     }
 
