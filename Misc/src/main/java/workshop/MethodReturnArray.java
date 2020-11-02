@@ -14,10 +14,11 @@ public class MethodReturnArray {
 
     private static String[] method() {
         String[] array = new String[1];
-        StringBuilder sb = new StringBuilder();
-        sb.append("Be a ");
-        sb.append("Java programmer");
-        array[0] = sb.toString();
+        String sb = """
+                Be a
+                Java programmer
+                """;
+        array[0] = sb;
         return array;
     }
 }
