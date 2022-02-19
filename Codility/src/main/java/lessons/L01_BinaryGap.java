@@ -1,6 +1,6 @@
 package lessons;
 /**
- * Find longest sequence of zeros in binary representation of an integer.
+ * Find the longest sequence of zeros in binary representation of an integer.
  */
 
 import java.io.BufferedReader;
