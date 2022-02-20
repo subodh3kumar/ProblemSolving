@@ -27,7 +27,7 @@ public class PracticeMakesPerfect {
         int current = 0;
         while (current < array.length) {
             start = current;
-            end = indexOf(array, ' ', start);
+            end = indexOf(array, start);
             if (end == -1) {
                 reverseChars(array, start, array.length - 1);
                 current = array.length;
@@ -38,9 +38,9 @@ public class PracticeMakesPerfect {
         }
     }
 
-    private static int indexOf(char[] array, char sentinel, int start) {
+    private static int indexOf(char[] array, int start) {
         for (int i = start; i < array.length; i++) {
-            if (array[i] == sentinel) {
+            if (array[i] == ' ') {
                 return i;
             }
         }
